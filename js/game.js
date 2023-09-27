@@ -15,6 +15,7 @@ const chacracters =[
   'one 9',
   'one 10',
   'chapeu',
+  'charmander',
 ];
 
 const createElement = (tag, className)=>{
@@ -28,7 +29,7 @@ let SegudaC ='';
 const fimDoJogo=()=>{
   const cartaAcertada = document.querySelectorAll('.acertouCarta');
 
-  if(cartaAcertada.length ===28){
+  if(cartaAcertada.length ===32){
     alert('Parabens, você encontrou o One piece!!');
   }
 }
