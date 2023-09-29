@@ -1,21 +1,21 @@
 const grid =document.querySelector('.grid');
-const spanJogador = document.querySelector('.player');
+
 const chacracters =[
-  'chopper',
-  'luffy',
-  'Pikachu',
-  'one 1',
-  'one 2',
-  'one 3',
-  'one 4', 
-  'one 5',
-  'one 6',
-  'one 7',
-  'one 8',
-  'one 9',
-  'one 10',
-  'chapeu',
-  'charmander',
+  'D1',
+  'D2',
+  'D3',
+  'D4',
+  'D5',
+  'D6',
+  'D7',
+  'D8',
+  'D9',
+  'D10',
+  'D11',
+  'D12',
+  'D13',
+  'D14',
+  'D15',
 ];
 
 const createElement = (tag, className)=>{
@@ -30,7 +30,7 @@ const fimDoJogo=()=>{
   const cartaAcertada = document.querySelectorAll('.acertouCarta');
 
   if(cartaAcertada.length ===32){
-    alert('Parabens, você encontrou o One piece!!');
+    alert('Parabens, você achou todos os monstrinhos de bolso!!');
   }
 }
 const confiraCartas =()=>{
@@ -111,9 +111,4 @@ const loadGame = ()=>{
 
     });
 }
-
-window.onload =() =>{
-  spanJogador.innerHTML =localStorage.getItem('player');
-
-  loadGame();
-}
+loadGame();

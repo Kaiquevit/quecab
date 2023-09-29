@@ -3,7 +3,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url(../images/Merry.png);
+    background-image: url(../images/Jakefundo.jpg);
     background-size: cover;
     min-height: 100vh;
     align-items: center;
@@ -37,7 +37,7 @@ header{
     width: 100%;
     border-radius: 5px;
     position: relative;
-    transition: all 400ms ease; 
+    transition: all 400ms ease;
     transform-style: preserve-3d;
 }
 .face{
@@ -56,7 +56,7 @@ header{
 
 }
 .back{
-    background-image: url('../images/law.png');
+    background-image: url('../images/Jake&finn.png');
     backface-visibility: hidden;
 
 }

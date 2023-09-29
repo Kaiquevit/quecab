@@ -1,0 +1,64 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+
+} */
+body{
+    height: 900vh;
+}
+nav.menuLateral{
+    width: 80px;
+    height: 100%;
+    background-color:black;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0  rgb(40, 9, 214);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+nav.menuLateral:hover{
+    width: 300px;
+}
+.butao{
+    width: 100%;
+    padding-left: 10px;
+}
+.butao > svg path{
+    color: aliceblue;
+    font-size: 90px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+
+}
+ul li.itemMenu{
+    transition: .2s;
+}
+ul li.ativo{
+    background-color: blue;
+}
+ul li.itemMenu:hover{
+    background-color:  rgb(40, 9, 214);
+}
+ul li.itemMenu a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.itemMenu a .txt-link{
+    margin-left: 60px;
+}
+ul li.itemMenu a .icon > svg {
+    font-size: 80px;
+}
