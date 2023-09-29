@@ -1,5 +1,6 @@
 const grid =document.querySelector('.grid');
 const spanJogador = document.querySelector('.player');
+const timer = document.querySelector('.timer')
 const chacracters =[
   'chopper',
   'luffy',
@@ -30,7 +31,8 @@ const fimDoJogo=()=>{
   const cartaAcertada = document.querySelectorAll('.acertouCarta');
 
   if(cartaAcertada.length ===32){
-    alert('Parabens, você encontrou o One piece!!');
+    clearInterval(this.loop);
+    alert(`Parabens,${spanJogador.innerHTML}!! você encontou o one piece hein: ${timer.innerHTML}`);
   }
 }
 const confiraCartas =()=>{
@@ -63,7 +65,7 @@ const confiraCartas =()=>{
      SegudaC ='';
 
   } ,500)
-  
+   
 }
 }
 
@@ -111,9 +113,18 @@ const loadGame = ()=>{
 
     });
 }
+const start = ()=>{
+
+
+  this.loop=setInterval(()=>{
+    const currentTimer = Number(timer.innerHTML);
+    timer.innerHTML= currentTimer+1;
+  },1000)
+}
 
 window.onload =() =>{
   spanJogador.innerHTML =localStorage.getItem('player');
-
+  start ();
   loadGame();
 }
+
