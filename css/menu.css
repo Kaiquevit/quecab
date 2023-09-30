@@ -1,6 +1,6 @@
-
+/* 
 html{
-    height: 200vh;
+    height: 100vh;
     background-color: black;
 }
 .container{
@@ -69,21 +69,85 @@ header ul li a{
     
 }
 
-.banner2 {
+*/
+
+/* Estilo global */
+html {
+    height: 150%;
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Adicione a fonte desejada */
+}
+
+/* Container para limitar a largura */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px; /* Espaçamento para telas menores */
+    box-sizing: border-box;
+}
+
+/* Estilos para elementos flexíveis */
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se adaptem à tela */
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilos do cabeçalho */
+header {
+    width: 100%;
+    padding: 20px 4%; /* Reduzir o preenchimento para telas menores */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #240424; /* Alterar cor de fundo */
+    transition: 0.5s;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 20px; /* Espaçamento lateral */
+}
+
+header ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px; /* Tamanho de fonte */
+}
+
+/* Estilos do banner */
+.banner {
     height: 100vh;
-    background-image: url(../images/Evanjelion.jpg);
+    background-image: url(../images/Evanjelion2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    flex-direction: column;
-    padding: 10vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10vh 0; /* Reduzir o preenchimento superior e inferior para telas menores */
 }
-.banner2 p{
-    padding: 30vh;
-    color:#000;
-    
+
+.banner h1 {
+    font-size: 3rem; /* Reduzir o tamanho da fonte para telas menores */
+    color: #7e6373;
+    text-align: center; /* Centralizar texto */
 }
+
+.banner h1 span {
+    color: black;
+}
+
+/* Mídia Query para tel
