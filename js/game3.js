@@ -1,5 +1,6 @@
 const grid =document.querySelector('.grid');
-
+const spanJogador = document.querySelector('.player');
+const timer = document.querySelector('.timer')
 const chacracters =[
   'D1',
   'D2',
@@ -18,6 +19,8 @@ const chacracters =[
   'D15',
 ];
 
+
+
 const createElement = (tag, className)=>{
   const element = document.createElement(tag);
   element.className = className;
@@ -25,13 +28,13 @@ const createElement = (tag, className)=>{
 }
 let PrimeiraC='';
 let SegudaC ='';
-
+//  para sabermos se o jogador acertou as cartas e depois ver se gahou o jogo
 const fimDoJogo=()=>{
 const cartaAcertada = document.querySelectorAll('.acertouCarta');
 
 if(cartaAcertada.length ===30){
   clearInterval(this.loop);
-  alert(`Parabens,${spanJogador.innerHTML}!! você encontou todos os monstrinhos hein: ${timer.innerHTML}`);
+  alert(`Parabens,${spanJogador.innerHTML}!! você encontou todos os monstrinhos hein: ${timer.innerHTML}segundos(^-^)`);
 }
 }
 const confiraCartas =()=>{
@@ -112,6 +115,7 @@ shuffleArray.forEach((chacracters) => {
 
   });
 }
+// função do tempo
 const start = ()=>{
 
 

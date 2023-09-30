@@ -1,6 +1,6 @@
 
 html{
-    height: 500vh;
+    height: 200vh;
     background-color: black;
 }
 .container{
@@ -68,7 +68,22 @@ header ul li a{
     color: black;
     
 }
-.banner p{
+
+.banner2 {
+    height: 100vh;
+    background-image: url(../images/Evanjelion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    flex-direction: column;
     padding: 10vh;
-    color:#7e6373;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner2 p{
+    padding: 30vh;
+    color:#000;
+    
 }
