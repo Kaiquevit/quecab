@@ -29,9 +29,9 @@ let SegudaC ='';
 const fimDoJogo=()=>{
 const cartaAcertada = document.querySelectorAll('.acertouCarta');
 
-if(cartaAcertada.length ===32){
+if(cartaAcertada.length ===30){
   clearInterval(this.loop);
-  alert(`Parabens,${spanJogador.innerHTML}!! você encontou o one piece hein: ${timer.innerHTML}`);
+  alert(`Parabens,${spanJogador.innerHTML}!! você encontou todos os monstrinhos hein: ${timer.innerHTML}`);
 }
 }
 const confiraCartas =()=>{

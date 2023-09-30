@@ -1,64 +1,74 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Press Start 2P', cursive;
 
-} */
-body{
-    height: 900vh;
+html{
+    height: 500vh;
+    background-color: black;
 }
-nav.menuLateral{
-    width: 80px;
-    height: 100%;
-    background-color:black;
-    padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0  rgb(40, 9, 214);
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: .2s;
+.container{
+    max-width: 1280px;
+    margin: auto;
 }
-nav.menuLateral:hover{
-    width: 300px;
-}
-.butao{
-    width: 100%;
-    padding-left: 10px;
-}
-.butao > svg path{
-    color: aliceblue;
-    font-size: 90px;
-    cursor: pointer;
-}
-ul{
-    height: 100%;
-    list-style-type: none;
-
-}
-ul li.itemMenu{
-    transition: .2s;
-}
-ul li.ativo{
-    background-color: blue;
-}
-ul li.itemMenu:hover{
-    background-color:  rgb(40, 9, 214);
-}
-ul li.itemMenu a{
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
+.flex{
     display: flex;
-    margin-bottom: 20px;
-    line-height: 40px;
+    align-items: center;
+    justify-content: space-around;
+   
 }
-ul li.itemMenu a .txt-link{
-    margin-left: 60px;
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    transition: .5;
 }
-ul li.itemMenu a .icon > svg {
-    font-size: 80px;
+header.rolagem1{
+    background-color: 
+    #240424;
+    padding: 20px 4%;
+}
+header.rolagem1 a{
+    color: #7e6373;
+
+}
+header ul{
+    list-style: none;
+
+}
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    min-height: 20vh;
+    margin-top: 20vh;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(../images/Evanjelion2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    flex-direction: column;
+    padding: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1{
+    font-size: 4rem;
+    color:#7e6373;
+}
+.banner h1 span{
+    color: black;
+    
+}
+.banner p{
+    padding: 10vh;
+    color:#7e6373;
 }

@@ -1,6 +1,8 @@
 const grid =document.querySelector('.grid');
 const spanJogador = document.querySelector('.player');
 const timer = document.querySelector('.timer')
+
+// nomes das imagens que peguei para o jogo
 const chacracters =[
   'HA1',
   'HA2',
@@ -18,7 +20,7 @@ const chacracters =[
   'HA13',
   'HA15',
 ];
-
+   
 const createElement = (tag, className)=>{
   const element = document.createElement(tag);
   element.className = className;
@@ -26,13 +28,13 @@ const createElement = (tag, className)=>{
 }
 let PrimeiraC='';
 let SegudaC ='';
-
+//  para sabermos se o jogador acertou as cartas e depois ver se gahou o jogo
 const fimDoJogo=()=>{
 const cartaAcertada = document.querySelectorAll('.acertouCarta');
 
-if(cartaAcertada.length ===32){
+if(cartaAcertada.length ===30){
   clearInterval(this.loop);
-  alert(`Parabens,${spanJogador.innerHTML}!! você encontou o one piece hein: ${timer.innerHTML}`);
+  alert(`Parabens,${spanJogador.innerHTML}!! você encontou todos os personagensque amamos hein: ${timer.innerHTML}segundos(^-^)`);
 }
 }
 const confiraCartas =()=>{
@@ -113,6 +115,7 @@ shuffleArray.forEach((chacracters) => {
 
   });
 }
+// função do tempo
 const start = ()=>{
 
 
