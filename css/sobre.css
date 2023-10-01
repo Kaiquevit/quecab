@@ -13,7 +13,7 @@ html{
     justify-content: space-around;
    
 }
-
+ 
 header{
     width: 100%;
     padding: 60px 4%;
@@ -24,11 +24,11 @@ header{
 }
 header.rolagem1{
     background-color: 
-    #240424;
+    #080424;
     padding: 20px 4%;
 }
 header.rolagem1 a{
-    color: #7e6373;
+    color: #5c23d0;
 
 }
 header ul{
@@ -50,6 +50,19 @@ header ul li a{
 
 .banner2 {
     height: 100vh;
+    background-image: url(../images/game\ boy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    flex-direction: column;
+    padding: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner3 {
+    height: 100vh;
     background-image: url(../images/Evanjelion.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -61,8 +74,11 @@ header ul li a{
     align-items: center;
     justify-content: center;
 }
+
 .banner2 p{
-    padding: 30vh;
-    color:#000;
+    padding: 20%;
+    color:#12841d;
+   
+    
     
 }
