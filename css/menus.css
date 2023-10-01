@@ -1,7 +1,5 @@
-
 html{
     height: 100vh;
-    background-color: black;
 }
 .container{
     max-width: 1280px;
@@ -41,33 +39,8 @@ header ul li{
 }
 
 header ul li a{
-    color: rgb(255, 255, 255);
+    color: rgb(23, 22, 22);
     text-decoration: none;
     min-height: 20vh;
     margin-top: 20vh;
 }
-
-.banner{
-    height: 100vh;
-    background-image: url(../images/Evanjelion2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    flex-direction: column;
-    padding: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.banner h1{
-    font-size: 4rem;
-    color:#7e6373;
-}
-.banner h1 span{
-    color: black;
-    
-}
-
-
-
