@@ -1,46 +1,69 @@
-html{
-    height: 100vh;
+html {
+    height: 100%;
 }
-.container{
-    max-width: 1280px;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 90%;
     margin: auto;
 }
-.flex{
+
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
 }
 
-header{
+header {
     width: 100%;
-    padding: 60px 4%;
+    padding: 6vh 4%;
     position: fixed;
-    top: 0 ;
+    top: 0;
     left: 0;
-    transition: .5;
+    transition: 0.5s;
 }
-header.rolagem1{
-    background-color: 
-    #240424;
-    padding: 20px 4%;
+
+header.rolagem1 {
+    background-color: #240424;
+    padding: 2vh 4%;
 }
-header.rolagem1 a{
+
+header.rolagem1 a {
     color: #7e6373;
-
 }
-header ul{
+
+header ul {
     list-style: none;
-
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-header ul li{
+
+header ul li {
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 20px;
 }
 
-header ul li a{
+header ul li a {
     color: rgb(23, 22, 22);
     text-decoration: none;
-    min-height: 20vh;
-    margin-top: 20vh;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    header ul li {
+        margin: 0 10px;
+    }
+
+    header.rolagem1 {
+        padding: 2vh 2%;
+    }
+
+    header ul li a {
+        margin-top: 5vh;
+    }
 }
